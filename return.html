@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="disp">
+
+    </div>
+  <!-- <input type="text" placeholder="Hour">
+  <input type="text" placeholder="Minute" id="mm">
+  <input type="text" placeholder="Second" id="ss">
+  <button onclick="startCountdown()">Start</button> --> -->
+    <script>
+        // let song = new Audio("11. Forever Amen (Live).mp3")
+        // const startCountdown = ()=>{
+        //     if(ss.value > 0){
+        //         ss.value --
+        //           setTimeout(startCountdown,1000);
+        //     }else{
+        //         mm.value = 60;
+        //         mm.value --
+        //         setTimeout(startCountdown,1000);
+        //     }
+        // }
+
+    //    let fruits = ["banana","apple","kiwi","orange","pawpaw"]
+    //    fruits.map((eachFruits,index,array)=>{
+    //        disp.innerHTML += `
+    //        ${index +1 } + <h3>${eachFruits}</h3>
+          
+    //        `
+
+    //    })
+
+    //    let colors = ["blue","blu blu","bala blue","bulaba","blue"]
+    //   newColors = colors.filter((eachItem,index,array)=>{})
+    //   console.log(newColors);
+    //    let fruits = ["kiwi","banana","orange","pawpaw"]
+    //    fruits.forEach(onlyFunction);
+    //    function onlyFunction (value,index,array){
+    //     disp.innerHTML += `${value}`
+
+    //    }
+    // fruits.forEach((value,index,array)=>{
+    //           disp.innerHTML += `${value}` 
+    // })
+    //   let num = [22,32,12,34,56,34,21,22]
+    //  over18 = num.filter((value,index,array)=>{
+    //          return value >30;
+    //         })
+    //         disp.innerHTML += over18;
+
+    //   calc = myfunction=(a,b)=>{
+    //     a = 2;
+    //     b = 4;
+    //       return  a * b;
+    //    }
+    //    disp.innerHTML = calc();
+
+    //    class myClass {
+    //     constructor(name,year){
+    //           this.name = name;
+    //           this.year = year;
+    //     }
+    //     age(){
+    //      let date = new Date ();
+    //     return date.getFullYear() - this.year;
+    //  }
+    //    }
+    //    let theCars = new myClass("Audi",2014)
+    //    disp.innerHTML =`My ${theCars.name} is ${theCars.age()} old in  ${theCars.year}`;
+
+    // let text = ""; 
+    //     const details = {
+    //       firstName: "Felix",
+    //       lastName: "Owolabi",
+    //       age :45,
+    //       edible: [
+    //           {name:"Solid",type:["eba","yam","fufu"]},
+    //           {name:"Liquid", type:["coke","pepsi","water"]}
+    //       ],
+    //     }
+
+    //     for (const i in details.edible){
+    //       text += `<h1>${details.edible[i].name}</h1>`
+    //       for (const k in details.edible[i].type){
+    //        text += `${details.edible[i].type[k]}<br>`
+    //       }
+                // const details = {
+                //   firstName : "Felix",
+                //   lastName: "Owolabi",
+                //   age: 45,
+                //   timely: "",
+                //    set time(time) {
+                //     this.timely = time;
+                //    }
+                // }
+
+                // details.time = 1234;
+                   
+                // console.log(details.timely)
+    //     }
+    //     disp.innerHTML = text;
+
+        //    function Person(first,last,age,year){
+        //       this.firstName =  first;
+        //       this.lastName = last;
+        //       this.age = age;
+        //       this.year = year;
+        //    }
+        //    Person.prototype.time = function (){
+        //     return this.firstName + " " + this.lastName
+        //    }
+           
+        //    const myFather = new Person ("Felix","Owolabi","28","2022")
+        //    const myMother = new Person ("Arike","Adeola","55","2023")
+          
+
+        //    disp.innerHTML = `My Father's name is ${myFather.firstName}, and my mother's name is ${myMother.lastName} at ${myFather.time()}`
+
+    //     const person = {
+    //         firstName: "Felix",
+    //         lastName: "Owolabi",
+    //         age:59
+    //     }
+
+    //     Object.defineProperty(person,"lastName",{enumerable:false});
+    //     Object.defineProperty(person,"year",{value:2023})
+    //    console.log(Object.getOwnPropertyNames(person));
+
+    //     disp.innerHTML = `My name is ${person.firstName} ${person.lastName}. And I am ${person.age} years old.`
+
+    // (function myfunction(){
+    //     alert('Hello, I am self-invoking')
+    // })()
+
+    // function sumAll(){
+    //     let sum = 0;
+    //     for(var i=0;i<arguments.length;i++){
+    //         sum +=arguments[i];
+    //     }
+    //     return sum;
+    // }
+    // disp.innerHTML = sumAll(24,44,56,78,12,32,44,66);
+        //  const person1 = {
+        //     firstName: "Felix",
+        //     lastName: "Owolabi",
+        //     age: 27,
+        //  }
+
+        //  const person2 = {
+        //     firstName: "Seyi",
+        //     lastName: "Raymond",
+        //     age:25,
+        //  }
+
+        //  const person = {
+        //     fullname: function (country,city) {
+        //         return this.firstName + "" + this.lastName + "" + this.age + country + city;
+        //     }
+        //  }
+
+        //  disp.innerHTML = person.fullname.apply(person2,["Nigeria","Ogbomoso"]);
+
+        // const person = {
+        //     first : "Felix",
+        //     last: "Bolu",
+        //     fullname: function(){
+        //         return this.first + "" + this.last
+        //     }
+        // }
+
+        // const member = {
+        //     first: "Seyi",
+        //     last: "Raymond",
+        // }
+
+        // disp.innerHTML = person.fullname.bind(member)();
+
+        // const person = {
+        //     first: "Felix",
+        //     last: "Bolu",
+        //     display: function(){
+        //         disp.innerHTML = this.first + "" + this.last;
+        //     }
+        // }
+        // let displayed = person.display.bind(person)
+        // setTimeout(displayed,3000)
+        // setInterval(myTime,1000);
+        
+        // function myTime(){
+        //     let d = new Date()
+        //     disp.innerHTML = `<h1>${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}</h1>`
+        // }
+    //     function myDisplayer(some1){
+    //         disp.innerHTML = some1;
+    //     }
+
+    //      async function myfunction(){
+    //         return" My Name is Felix Owolabi";
+    //      }
+
+    //   myfunction().then(
+    //     function(value){myDisplayer(value)},
+    //     function(error){myDisplayer(error)}
+    //   )
+
+//     let myPromise = new Promise(function(myResolve, myReject) {
+//   let x = 0;
+
+//   if (x == 0) {
+//     myResolve("OK");
+//   } else {
+//     myReject("Error");
+//   }
+// });
+          
+            </script>
+    
+</body>
+</html>

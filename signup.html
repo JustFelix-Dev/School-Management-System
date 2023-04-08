@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: orangered;
+        color:black;
+    }
+    #center {
+        border: 5px solid black;
+        border-radius: 30px;
+        box-shadow: 0 0 10px white,0 0 6px white;
+        padding: 30px;
+        position: absolute;
+        left:-200px;
+        top: -270px;
+        transform: translate(50%,50%);
+        width: 60%;
+        height: 95%;
+
+    }
+    input[type="text"],input[type="email"],input[type="password"] {
+        border-radius: 50px;
+    }
+    input:hover{
+        background-color: antiquewhite;
+        caret-color: red;
+    }
+
+</style>
+<body>
+    <marquee behavior="alternate" direction="left">
+        <h3>Welcome to the School's Portal SignUp Page!</h3>
+    </marquee><br>
+    <div id="center">
+        <h2>Sign Up Here :</h2>
+        <label class="form-label" for="fn">First Name:</label>
+        <input class="form-control" type="text" id="fn"><br><br>
+        <label class="form-label" for="ln">Last Name:</label>
+        <input  class="form-control" type="text" id="ln"> <br><br>
+        <label  class="form-label"for="mail">E-mail:</label>
+        <input   class="form-control"type="email" id="mail"><br><br>
+        <label class="form-label" for="pass"> Password:</label>
+        <input  class="form-control"type="password" id="pass">
+        <br><hr>
+        <button class="btn btn-outline-dark rounded-pill btn-hover px-5"onclick="signUp()"> Sign Up &uarr;</button>
+    
+    </div>
+   
+     <script>
+         var allStudents = []
+        if(localStorage.localStudents){
+            var oldInfo =  JSON.parse(localStorage.getItem('localStudents'))
+            // var oldInfo = JSON.parse(localStorage.localStudents)
+            allStudents = oldInfo
+        }
+        function signUp() {
+          var Student = {
+            firstName : fn.value,
+            lastName : ln.value,
+            email : mail.value,
+            passWord: pass.value,
+          }
+          allStudents.push(Student)
+          localStorage.setItem('localStudents',JSON.stringify(allStudents))
+        //   localStorage.localStudents = JSON.stringify(allStudents)
+          fn.value = ""; ln.value = ""; mail.value  = ""; pass.value = "";
+           window.location.href = "signin.html"
+        }
+     </script>
+</body>
+</html>

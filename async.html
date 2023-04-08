@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getData()">
+    <button onclick="getData()">Fetch From API</button>
+    <button onclick="test()">Test</button>
+    <div id="disp">
+
+    </div>
+    <script>
+        let endpoint = "https://jsonplaceholder.typicode.com/users";
+        const getData =()=>{
+            fetch(endpoint).then((response)=>{
+                return response.json()
+            })
+            .then((convertedResponse)=>{
+                convertedResponse.map((eachItem,index,array)=>{
+                        disp.innerHTML +=`<h4>${eachItem.name}</h4>`;
+                })
+            })
+        }
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="center">
+        <input type="text" placeholder="Your Name" id="fn"><br><br>
+        <input type="text" placeholder="Your Lover's Name" id="sn"><br><br>
+        <button onclick="love()">Calculate Love</button>
+    </div>
+    <hr>
+    <div id="disp">
+
+    </div>
+    <script>
+        
+       var myDate = new Date()
+        myDate.getMilliseconds
+        function love(){
+            if(sn.value == "" || fn.value==""){
+                disp.innerHTML = 'Check your name inputs !'
+            }else{
+                var randomNum = Math.round(Math.random()*100)
+                disp.innerHTML = `${randomNum}%`
+
+            }
+       
+        }
+      
+    </script>
+</body>
+</html>
